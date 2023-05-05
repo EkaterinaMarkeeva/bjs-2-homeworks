@@ -103,10 +103,10 @@ function makeWork (arrOfArr, func) {
   let maxWorkerResult = -Infinity;
 
   for (let i = 0; i < arrOfArr.length; i += 1) {
-    func(...arrOfArr[i]);
+    const functionResult = func(...arrOfArr[i]);
 
-    if (maxWorkerResult < func(...arrOfArr[i])) {
-      maxWorkerResult = func(...arrOfArr[i]);
+    if (maxWorkerResult < functionResult) {
+      maxWorkerResult = functionResult;
     }
   }
 
