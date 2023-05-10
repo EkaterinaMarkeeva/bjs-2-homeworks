@@ -39,3 +39,6 @@ Student.prototype.exclude = function (reason) {
     delete this.marks
     this.excluded = reason;
 }
+
+let student1 = new Student("Василиса", "женский", 19);
+let student2 = new Student("Артём", "мужской", 25);
