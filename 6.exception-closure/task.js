@@ -40,9 +40,6 @@ class Triangle {
 
 function getTriangle(a, b, c) {
 	try {
-    function triangleGenerator() {
-      return new Triangle(a, b, c);
-    }
     return new Triangle(a, b, c);
 	} catch (error) {
 		return {
